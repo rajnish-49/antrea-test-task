@@ -54,10 +54,10 @@ spec:
             fieldRef:
               fieldPath: spec.nodeName
         volumeMounts:
-        - name: captures
-          mountPath: /captures
+        - name: capture-data
+          mountPath: /data
       volumes:
-      - name: captures
+      - name: capture-data
         emptyDir: {}
       tolerations:
       - operator: Exists
