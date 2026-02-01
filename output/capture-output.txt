@@ -1,0 +1,100 @@
+reading from file /tmp/capture-test-pod.pcap0, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144
+Warning: interface names might be incorrect
+11:08:41.038935 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 1813680012:1813680165, ack 783822229, win 635, options [nop,nop,TS val 3483639022 ecr 4027503587], length 153
+11:08:41.082052 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 153, win 2730, options [nop,nop,TS val 4027503853 ecr 3483639022], length 0
+11:08:41.132267 test-pod-93da03 P   IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 134, seq 0, length 64
+11:08:41.132295 antrea-gw0 In  IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 134, seq 0, length 64
+11:08:41.132400 eth0  Out IP antrea-capture-worker > 8.8.8.8: ICMP echo request, id 134, seq 0, length 64
+11:08:41.148318 eth0  In  IP 8.8.8.8 > antrea-capture-worker: ICMP echo reply, id 134, seq 0, length 64
+11:08:41.148338 antrea-gw0 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 134, seq 0, length 64
+11:08:41.148357 test-pod-93da03 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 134, seq 0, length 64
+11:08:41.187898 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 108
+11:08:41.188186 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 20
+11:08:41.731894 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.48198: Flags [P.], seq 913301060:913301181, ack 3939284311, win 639, options [nop,nop,TS val 3483639715 ecr 1882767849], length 121
+11:08:41.774057 eth0  Out IP antrea-capture-worker.48198 > antrea-capture-control-plane.kind.6443: Flags [.], ack 121, win 802, options [nop,nop,TS val 1882779469 ecr 3483639715], length 0
+11:08:42.290540 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 108
+11:08:42.290858 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 20
+11:08:42.296483 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 153:184, ack 1, win 635, options [nop,nop,TS val 3483640280 ecr 4027503853], length 31
+11:08:42.296543 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 184, win 2730, options [nop,nop,TS val 4027505067 ecr 3483640280], length 0
+11:08:42.297012 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [P.], seq 1:131, ack 184, win 2730, options [nop,nop,TS val 4027505068 ecr 3483640280], length 130
+11:08:42.297071 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [.], ack 131, win 635, options [nop,nop,TS val 3483640281 ecr 4027505068], length 0
+11:08:42.297810 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 184:273, ack 131, win 635, options [nop,nop,TS val 3483640281 ecr 4027505068], length 89
+11:08:42.338078 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 273, win 2730, options [nop,nop,TS val 4027505109 ecr 3483640281], length 0
+11:08:42.454727 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 273:429, ack 131, win 635, options [nop,nop,TS val 3483640438 ecr 4027505109], length 156
+11:08:42.454793 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 429, win 2730, options [nop,nop,TS val 4027505225 ecr 3483640438], length 0
+11:08:42.729056 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 429:527, ack 131, win 635, options [nop,nop,TS val 3483640713 ecr 4027505225], length 98
+11:08:42.729120 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 527, win 2730, options [nop,nop,TS val 4027505500 ecr 3483640713], length 0
+11:08:43.151033 test-pod-93da03 P   IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 135, seq 0, length 64
+11:08:43.151052 antrea-gw0 In  IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 135, seq 0, length 64
+11:08:43.151093 eth0  Out IP antrea-capture-worker > 8.8.8.8: ICMP echo request, id 135, seq 0, length 64
+11:08:43.167568 eth0  In  IP 8.8.8.8 > antrea-capture-worker: ICMP echo reply, id 135, seq 0, length 64
+11:08:43.167585 antrea-gw0 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 135, seq 0, length 64
+11:08:43.167599 test-pod-93da03 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 135, seq 0, length 64
+11:08:43.187743 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 108
+11:08:43.188030 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 20
+11:08:44.186792 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 108
+11:08:44.187055 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 20
+11:08:44.289682 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 108
+11:08:44.290073 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 20
+11:08:44.457817 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 527:558, ack 131, win 635, options [nop,nop,TS val 3483642441 ecr 4027505500], length 31
+11:08:44.457904 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 558, win 2730, options [nop,nop,TS val 4027507228 ecr 3483642441], length 0
+11:08:44.458493 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [P.], seq 131:311, ack 558, win 2730, options [nop,nop,TS val 4027507229 ecr 3483642441], length 180
+11:08:44.459513 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.9117: Flags [P.], seq 558:648, ack 311, win 635, options [nop,nop,TS val 3483642443 ecr 4027507229], length 90
+11:08:44.502082 eth0  Out IP antrea-capture-worker.9117 > antrea-capture-control-plane.kind.6443: Flags [.], ack 648, win 2730, options [nop,nop,TS val 4027507273 ecr 3483642443], length 0
+11:08:44.609686 eth0  Out IP antrea-capture-worker.48196 > antrea-capture-control-plane.kind.6443: Flags [P.], seq 2513094459:2513094499, ack 209173093, win 1359, options [nop,nop,TS val 1882782304 ecr 3483638800], length 40
+11:08:44.609751 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.48196: Flags [.], ack 40, win 639, options [nop,nop,TS val 3483642593 ecr 1882782304], length 0
+11:08:44.609800 eth0  Out IP antrea-capture-worker.48196 > antrea-capture-control-plane.kind.6443: Flags [P.], seq 40:586, ack 1, win 1359, options [nop,nop,TS val 1882782304 ecr 3483642593], length 546
+11:08:44.609822 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.48196: Flags [.], ack 586, win 637, options [nop,nop,TS val 3483642593 ecr 1882782304], length 0
+11:08:44.617407 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.48196: Flags [P.], seq 1:104, ack 586, win 639, options [nop,nop,TS val 3483642601 ecr 1882782304], length 103
+11:08:44.617484 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.48196: Flags [P.], seq 104:650, ack 586, win 639, options [nop,nop,TS val 3483642601 ecr 1882782304], length 546
+11:08:44.617590 eth0  Out IP antrea-capture-worker.48196 > antrea-capture-control-plane.kind.6443: Flags [.], ack 650, win 1359, options [nop,nop,TS val 1882782312 ecr 3483642601], length 0
+11:08:45.170088 test-pod-93da03 P   IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 136, seq 0, length 64
+11:08:45.170105 antrea-gw0 In  IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 136, seq 0, length 64
+11:08:45.170154 eth0  Out IP antrea-capture-worker > 8.8.8.8: ICMP echo request, id 136, seq 0, length 64
+11:08:45.185790 eth0  In  IP 8.8.8.8 > antrea-capture-worker: ICMP echo reply, id 136, seq 0, length 64
+11:08:45.185816 antrea-gw0 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 136, seq 0, length 64
+11:08:45.185831 test-pod-93da03 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 136, seq 0, length 64
+11:08:45.886438 lo    In  IP6 localhost.40432 > localhost.10350: Flags [S], seq 2453896245, win 65476, options [mss 65476,sackOK,TS val 3181105679 ecr 0,nop,wscale 7], length 0
+11:08:45.886465 lo    In  IP6 localhost.10350 > localhost.40432: Flags [S.], seq 3193872029, ack 2453896246, win 65464, options [mss 65476,sackOK,TS val 3181105679 ecr 3181105679,nop,wscale 7], length 0
+11:08:45.886483 lo    In  IP6 localhost.40432 > localhost.10350: Flags [.], ack 1, win 512, options [nop,nop,TS val 3181105679 ecr 3181105679], length 0
+11:08:45.886837 lo    In  IP6 localhost.40432 > localhost.10350: Flags [P.], seq 1:1516, ack 1, win 512, options [nop,nop,TS val 3181105679 ecr 3181105679], length 1515
+11:08:45.886874 lo    In  IP6 localhost.10350 > localhost.40432: Flags [.], ack 1516, win 629, options [nop,nop,TS val 3181105679 ecr 3181105679], length 0
+11:08:45.888782 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 1:3430, ack 1516, win 629, options [nop,nop,TS val 3181105681 ecr 3181105679], length 3429
+11:08:45.888816 lo    In  IP6 localhost.40432 > localhost.10350: Flags [.], ack 3430, win 782, options [nop,nop,TS val 3181105681 ecr 3181105681], length 0
+11:08:45.889296 lo    In  IP6 localhost.40432 > localhost.10350: Flags [P.], seq 1516:1610, ack 3430, win 782, options [nop,nop,TS val 3181105682 ecr 3181105681], length 94
+11:08:45.889467 lo    In  IP6 localhost.40432 > localhost.10350: Flags [P.], seq 1610:1702, ack 3430, win 782, options [nop,nop,TS val 3181105682 ecr 3181105681], length 92
+11:08:45.889564 lo    In  IP6 localhost.10350 > localhost.40432: Flags [.], ack 1702, win 629, options [nop,nop,TS val 3181105682 ecr 3181105682], length 0
+11:08:45.889601 lo    In  IP6 localhost.40432 > localhost.10350: Flags [P.], seq 1702:1773, ack 3430, win 782, options [nop,nop,TS val 3181105682 ecr 3181105682], length 71
+11:08:45.889644 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 3430:3491, ack 1773, win 629, options [nop,nop,TS val 3181105682 ecr 3181105682], length 61
+11:08:45.889763 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 3491:3535, ack 1773, win 629, options [nop,nop,TS val 3181105682 ecr 3181105682], length 44
+11:08:45.889800 lo    In  IP6 localhost.40432 > localhost.10350: Flags [P.], seq 1773:1804, ack 3535, win 782, options [nop,nop,TS val 3181105682 ecr 3181105682], length 31
+11:08:45.890373 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 3535:3574, ack 1804, win 629, options [nop,nop,TS val 3181105683 ecr 3181105682], length 39
+11:08:45.890493 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 3574:3726, ack 1804, win 629, options [nop,nop,TS val 3181105683 ecr 3181105682], length 152
+11:08:45.890554 lo    In  IP6 localhost.40432 > localhost.10350: Flags [.], ack 3726, win 802, options [nop,nop,TS val 3181105683 ecr 3181105683], length 0
+11:08:45.890590 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 3726:3759, ack 1804, win 629, options [nop,nop,TS val 3181105683 ecr 3181105683], length 33
+11:08:45.890718 lo    In  IP6 localhost.40432 > localhost.10350: Flags [P.], seq 1804:1828, ack 3759, win 802, options [nop,nop,TS val 3181105683 ecr 3181105683], length 24
+11:08:45.890784 lo    In  IP6 localhost.40432 > localhost.10350: Flags [F.], seq 1828, ack 3759, win 802, options [nop,nop,TS val 3181105683 ecr 3181105683], length 0
+11:08:45.890878 lo    In  IP6 localhost.10350 > localhost.40432: Flags [P.], seq 3759:3783, ack 1829, win 629, options [nop,nop,TS val 3181105683 ecr 3181105683], length 24
+11:08:45.890921 lo    In  IP6 localhost.40432 > localhost.10350: Flags [R], seq 2453898074, win 0, length 0
+11:08:46.187777 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 108
+11:08:46.188154 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 20
+11:08:46.289904 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 108
+11:08:46.290281 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 20
+11:08:46.718523 eth0  In  IP antrea-capture-control-plane.kind.6443 > antrea-capture-worker.48196: Flags [P.], seq 650:765, ack 586, win 639, options [nop,nop,TS val 3483644702 ecr 1882782312], length 115
+11:08:46.762111 eth0  Out IP antrea-capture-worker.48196 > antrea-capture-control-plane.kind.6443: Flags [.], ack 765, win 1359, options [nop,nop,TS val 1882784457 ecr 3483644702], length 0
+11:08:47.188681 test-pod-93da03 P   IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 137, seq 0, length 64
+11:08:47.188739 antrea-gw0 In  IP 10.244.1.2 > 8.8.8.8: ICMP echo request, id 137, seq 0, length 64
+11:08:47.188787 eth0  Out IP antrea-capture-worker > 8.8.8.8: ICMP echo request, id 137, seq 0, length 64
+11:08:47.203629 eth0  In  IP 8.8.8.8 > antrea-capture-worker: ICMP echo reply, id 137, seq 0, length 64
+11:08:47.203650 antrea-gw0 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 137, seq 0, length 64
+11:08:47.203667 test-pod-93da03 Out IP 8.8.8.8 > 10.244.1.2: ICMP echo reply, id 137, seq 0, length 64
+11:08:47.290292 eth0  Out IP antrea-capture-worker.10351 > antrea-capture-control-plane.kind.10351: UDP, length 108
+11:08:47.290862 eth0  In  IP antrea-capture-control-plane.kind.10351 > antrea-capture-worker.10351: UDP, length 20
+11:08:47.832620 lo    In  IP6 localhost.40448 > localhost.10350: Flags [S], seq 3269497823, win 65476, options [mss 65476,sackOK,TS val 3181107625 ecr 0,nop,wscale 7], length 0
+11:08:47.832669 lo    In  IP6 localhost.10350 > localhost.40448: Flags [S.], seq 309962284, ack 3269497824, win 65464, options [mss 65476,sackOK,TS val 3181107625 ecr 3181107625,nop,wscale 7], length 0
+11:08:47.832690 lo    In  IP6 localhost.40448 > localhost.10350: Flags [.], ack 1, win 512, options [nop,nop,TS val 3181107625 ecr 3181107625], length 0
+11:08:47.833031 lo    In  IP6 localhost.40448 > localhost.10350: Flags [P.], seq 1:1516, ack 1, win 512, options [nop,nop,TS val 3181107626 ecr 3181107625], length 1515
+11:08:47.833062 lo    In  IP6 localhost.10350 > localhost.40448: Flags [.], ack 1516, win 629, options [nop,nop,TS val 3181107626 ecr 3181107626], length 0
+11:08:47.834606 lo    In  IP6 localhost.10350 > localhost.40448: Flags [P.], seq 1:3430, ack 1516, win 629, options [nop,nop,TS val 3181107627 ecr 3181107626], length 3429
+11:08:47.834648 lo    In  IP6 localhost.40448 > localhost.10350: Flags [.], ack 3430, win 782, options [nop,nop,TS val 3181107627 ecr 3181107627], length 0
+11:08:47.834996 lo    In  IP6 localhost.40448 > localhost.10350: Flags [P.], seq 1516:1610, ack 3430, win 782, options [nop,nop,TS val 3181107628 ecr 3181107627], length 94
