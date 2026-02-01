@@ -52,10 +52,10 @@ Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
 Events:
-  Type    Reason     Age    From               Message
-  ----    ------     ----   ----               -------
-  Normal  Scheduled  6m43s  default-scheduler  Successfully assigned default/test-pod to antrea-capture-worker
-  Normal  Pulling    6m43s  kubelet            spec.containers{traffic-gen}: Pulling image "busybox:1.36"
-  Normal  Pulled     6m34s  kubelet            spec.containers{traffic-gen}: Successfully pulled image "busybox:1.36" in 8.533s (8.533s including waiting). Image size: 2217150 bytes.
-  Normal  Created    6m34s  kubelet            spec.containers{traffic-gen}: Container created
-  Normal  Started    6m34s  kubelet            spec.containers{traffic-gen}: Container started
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  57m   default-scheduler  Successfully assigned default/test-pod to antrea-capture-worker
+  Normal  Pulling    57m   kubelet            spec.containers{traffic-gen}: Pulling image "busybox:1.36"
+  Normal  Pulled     57m   kubelet            spec.containers{traffic-gen}: Successfully pulled image "busybox:1.36" in 8.533s (8.533s including waiting). Image size: 2217150 bytes.
+  Normal  Created    57m   kubelet            spec.containers{traffic-gen}: Container created
+  Normal  Started    57m   kubelet            spec.containers{traffic-gen}: Container started

@@ -53,5 +53,11 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: spec.nodeName
+        volumeMounts:
+        - name: captures
+          mountPath: /captures
+      volumes:
+      - name: captures
+        emptyDir: {}
       tolerations:
       - operator: Exists

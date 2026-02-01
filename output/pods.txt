@@ -1,16 +1,16 @@
 NAMESPACE            NAME                                                   READY   STATUS    RESTARTS        AGE
-default              test-pod                                               1/1     Running   0               6m54s
-kube-system          antrea-agent-cqk2v                                     2/2     Running   0               13m
-kube-system          antrea-agent-x48bg                                     2/2     Running   0               13m
-kube-system          antrea-controller-7f69c8dc84-28frw                     1/1     Running   0               13m
-kube-system          capture-controller-jhdkq                               1/1     Running   0               2m41s
-kube-system          capture-controller-vhl8z                               1/1     Running   0               2m39s
-kube-system          coredns-7d764666f9-2hlzk                               1/1     Running   0               14m
-kube-system          coredns-7d764666f9-k4bjb                               1/1     Running   0               14m
-kube-system          etcd-antrea-capture-control-plane                      1/1     Running   0               14m
-kube-system          kube-apiserver-antrea-capture-control-plane            1/1     Running   0               14m
-kube-system          kube-controller-manager-antrea-capture-control-plane   1/1     Running   1 (8m55s ago)   14m
-kube-system          kube-proxy-8v682                                       1/1     Running   0               14m
-kube-system          kube-proxy-bb6cd                                       1/1     Running   0               14m
-kube-system          kube-scheduler-antrea-capture-control-plane            1/1     Running   2 (4m4s ago)    14m
-local-path-storage   local-path-provisioner-67b8995b4b-bdrwp                1/1     Running   0               14m
+default              test-pod                                               1/1     Running   0               57m
+kube-system          antrea-agent-cqk2v                                     2/2     Running   0               64m
+kube-system          antrea-agent-x48bg                                     2/2     Running   0               64m
+kube-system          antrea-controller-7f69c8dc84-28frw                     1/1     Running   0               64m
+kube-system          capture-controller-6h9dj                               1/1     Running   0               47s
+kube-system          capture-controller-wwpcz                               1/1     Running   0               46s
+kube-system          coredns-7d764666f9-2hlzk                               1/1     Running   0               64m
+kube-system          coredns-7d764666f9-k4bjb                               1/1     Running   0               64m
+kube-system          etcd-antrea-capture-control-plane                      1/1     Running   0               64m
+kube-system          kube-apiserver-antrea-capture-control-plane            1/1     Running   0               64m
+kube-system          kube-controller-manager-antrea-capture-control-plane   1/1     Running   3 (5m23s ago)   64m
+kube-system          kube-proxy-8v682                                       1/1     Running   0               64m
+kube-system          kube-proxy-bb6cd                                       1/1     Running   0               64m
+kube-system          kube-scheduler-antrea-capture-control-plane            1/1     Running   4 (5m20s ago)   64m
+local-path-storage   local-path-provisioner-67b8995b4b-bdrwp                1/1     Running   0               64m

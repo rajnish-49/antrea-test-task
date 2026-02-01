@@ -110,7 +110,7 @@ func startCapture(podName string, maxFiles string) {
 		return
 	}
 
-	outputFile := fmt.Sprintf("/tmp/capture-%s.pcap", podName)
+	outputFile := fmt.Sprintf("/captures/capture-%s.pcap", podName)
 	cmd := exec.Command("tcpdump", "-C", "1", "-W", maxFiles, "-w", outputFile, "-i", "any")
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -137,7 +137,7 @@ func stopCapture(podName string) {
 	cmd.Wait()
 	delete(captures, podName)
 
-	files, _ := filepath.Glob(fmt.Sprintf("/tmp/capture-%s.pcap*", podName))
+	files, _ := filepath.Glob(fmt.Sprintf("/captures/capture-%s.pcap*", podName))
 	for _, f := range files {
 		os.Remove(f)
 		klog.Infof("deleted %s", f)
@@ -152,7 +152,7 @@ func stopAllCaptures() {
 	for name, cmd := range captures {
 		cmd.Process.Signal(syscall.SIGTERM)
 		cmd.Wait()
-		files, _ := filepath.Glob(fmt.Sprintf("/tmp/capture-%s.pcap*", name))
+		files, _ := filepath.Glob(fmt.Sprintf("/captures/capture-%s.pcap*", name))
 		for _, f := range files {
 			os.Remove(f)
 		}
