@@ -1,1 +1,1 @@
--rw-r--r-- 1 tcpdump tcpdump 581632 Feb  1 12:03 /captures/capture-test-pod.pcap0
+-rw-r--r-- 1 tcpdump tcpdump 151552 Feb  1 12:08 /captures/capture-test-pod.pcap0
